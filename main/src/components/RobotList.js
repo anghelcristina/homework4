@@ -35,7 +35,7 @@ class RobotList extends Component {
 	render() {
 		return (
 			<div>
-				 
+				 <RobotForm onAdd={ this.onAdd }/>
 				{
 					this.state.robots.map((e, i) => 
 						<Robot item={e} key={i} />
